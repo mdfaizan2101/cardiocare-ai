@@ -1,20 +1,23 @@
 # 🫀 CardioCare AI — Explainable Cardiovascular Risk Assessment Platform
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit_App-success)](https://ai-cardiocare.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Pipeline-orange)
 ![Explainable AI](https://img.shields.io/badge/XAI-SHAP-crimson)
-![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-ff4b4b)
+[![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-ff4b4b)](https://ai-cardiocare.streamlit.app/)
 
 **CardioCare AI** is an end-to-end clinical decision-support and health education web application that predicts cardiovascular disease risk from 13 clinical biomarkers, explains individual predictions using **SHAP (SHapley Additive exPlanations)**, and generates downloadable **PDF diagnostic reports**.
+
+🌐 **Live Demo:** **[ai-cardiocare.streamlit.app](https://ai-cardiocare.streamlit.app/)** *(Includes one-click Low-Risk and High-Risk patient presets)*
 
 ---
 
 ## 🌟 Portfolio Highlights
-* **Clinical-Grade Sensitivity (96.0% Recall):** Tuned via 5-fold Stratified Cross-Validation to minimize false negatives on unseen patients, achieving a **0.9535 Test ROC-AUC** and **90.2% overall accuracy**.
-* **Zero Data Leakage Architecture:** Bundles median/mode imputation (`SimpleImputer`), continuous feature scaling (`StandardScaler`), and categorical encoding (`OneHotEncoder`) inside a unified Scikit-Learn `ColumnTransformer` + `RandomForestClassifier` pipeline (`heart_disease_pipeline.pkl`).
-* **Patient-Level Explainable AI (SHAP):** Computes local `TreeExplainer` feature contributions in real time so clinicians and patients can see exactly which biomarkers increased or decreased risk.
-* **Automated PDF Clinical Report Generation:** Exports a formatted PDF report containing decoded patient vitals, the embedded SHAP explanation chart, and evidence-based clinical recommendations.
-* **One-Click Recruiter Demo Presets:** Includes built-in **Low-Risk** and **High-Risk** sample patient profiles for instant testing.
+- **Clinical-Grade Sensitivity (96.0% Recall):** Tuned via 5-fold Stratified Cross-Validation to minimize false negatives on unseen patients, achieving a **0.9535 Test ROC-AUC** and **90.2% overall accuracy**.
+- **Zero Data Leakage Architecture:** Bundles median/mode imputation (`SimpleImputer`), continuous feature scaling (`StandardScaler`), and categorical encoding (`OneHotEncoder`) inside a unified Scikit-Learn `ColumnTransformer` + `RandomForestClassifier` pipeline (`heart_disease_pipeline.pkl`).
+- **Patient-Level Explainable AI (SHAP):** Computes local `TreeExplainer` feature contributions in real time so clinicians and patients can see exactly which biomarkers increased or decreased risk.
+- **Automated PDF Clinical Report Generation:** Exports a formatted PDF report containing decoded patient vitals, the embedded SHAP explanation chart, and evidence-based clinical recommendations.
+- **One-Click Recruiter Demo Presets:** Includes built-in **Low-Risk** and **High-Risk** sample patient profiles for instant testing.
 
 ---
 
@@ -28,8 +31,12 @@
 
 ---
 
-## 🚀 Quickstart (Local Execution)
+## 🚀 Quickstart
 
+### Option 1: Try the Live Web App (No Installation Required)
+Access the deployed application directly in your browser: **[https://ai-cardiocare.streamlit.app/](https://ai-cardiocare.streamlit.app/)**
+
+### Option 2: Local Execution
 ```bash
 # 1. Clone the repository
 git clone [https://github.com/](https://github.com/)<your-username>/cardiocare-ai.git
